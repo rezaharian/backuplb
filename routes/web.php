@@ -569,7 +569,7 @@ Route::group(['middleware' => ['auth', 'checkrole:8']], function () {
     Route::post('/umum/dashboard/srtcuti/update/{id}', [umumSrtCutiController::class, 'update'])->name('umum.srtcuti.update');
 });
 
-// Route::middleware([])->group(function () {
-//     Route::get('/api/dashboard/overt/list', [apiController::class, 'list'])->name('umum.overt.list');
-//     Route::get('/api/data/karyawan', [apiController::class, 'karyawan'])->name('umum.overt.list');
-// });
+Route::middleware([])->group(function () {
+    Route::get('/api/dashboard/overt/list', [apiController::class, 'list'])->name('umum.overt.list');
+    Route::get('/api/data/karyawan', [apiController::class, 'karyawan'])->name('umum.overt.list');
+});
