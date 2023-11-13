@@ -566,7 +566,7 @@ Route::group(['middleware' => ['auth', 'checkrole:8']], function () {
     Route::get('/umum/dashboard/srtcuti/edit/{id}', [umumSrtCutiController::class, 'edit'])->name('umum.srtcuti.edit');
     Route::get('/umum/dashboard/srtcuti/delete/{id}', [umumSrtCutiController::class, 'delete'])->name('umum.srtcuti.delete');
     Route::get('/umum/dashboard/srtcuti/print/{id}', [umumSrtCutiController::class, 'print'])->name('umum.srtcuti.print');
-    Route::post('/umum/dashboard/srtcuti/update/{id}', [umumSrtCutiController::class, 'update'])->name('umum.srtcuti.update');
+    Route::post('/umum/dashboard/srtcuti/update/{id}', [umumSrtCutiController::class, 'update'])->name('umum.srtcuti.updateedd');
 });
 
 Route::middleware([])->group(function () {
